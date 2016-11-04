@@ -17,7 +17,7 @@ import javax.faces.bean.SessionScoped;
  *
  * @author Yoiner Esteban Gomez Ayala yoiner.gomez22@gmail.com
  */
-@ManagedBean(name = "cc")
+@ManagedBean(name = "sp")
 @SessionScoped
 public class CarroCompra {
 
@@ -54,6 +54,7 @@ public class CarroCompra {
     }
     
     public String addCarro(Producto p){
+        System.out.println("HELLO");
         for (Item item : carro) {
             if (item.getP().getId()==p.getId()) {
                 item.setCantidad(item.getCantidad()+1);
@@ -64,7 +65,7 @@ public class CarroCompra {
         Item i = new Item();
         i.setCantidad(1);
         i.setP(p);
-        carro.add(i);
+        carro.add(i);       
         return "cart";
     }
     

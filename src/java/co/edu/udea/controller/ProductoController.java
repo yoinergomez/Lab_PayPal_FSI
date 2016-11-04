@@ -19,7 +19,7 @@ import javax.faces.bean.ManagedBean;
 @ManagedBean(name = "productoController")
 public class ProductoController {
 
-    private List<Producto> list = new ArrayList<Producto>();
+    private List<Producto> lista = new ArrayList<Producto>();
     
     
     
@@ -35,7 +35,7 @@ public class ProductoController {
     }
     
     public void setLista(List<Producto> lista) {
-        this.list = lista;
+        this.lista = lista;
     }
     
     
