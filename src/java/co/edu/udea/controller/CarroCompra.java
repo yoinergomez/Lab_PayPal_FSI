@@ -7,7 +7,6 @@ package co.edu.udea.controller;
 
 import co.edu.udea.entity.Item;
 import co.edu.udea.entity.Producto;
-import co.edu.udea.modelo.ProductoDAO;
 import java.util.ArrayList;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
@@ -54,7 +53,7 @@ public class CarroCompra {
         this.total = total;
     }
     
-    private String addCarro(Producto p){
+    public String addCarro(Producto p){
         for (Item item : carro) {
             if (item.getP().getId()==p.getId()) {
                 item.setCantidad(item.getCantidad()+1);
