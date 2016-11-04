@@ -1,21 +1,20 @@
-<?xml version="1.0"?>
-<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!-- Generated 4/11/2016 10:52:05 AM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-    <class name="co.edu.udea.entity.Productos" table="productos" catalog="udeacommerce" optimistic-lock="version">
-        <id name="id" type="int">
-            <column name="id" />
-            <generator class="assigned" />
-        </id>
-        <property name="nombre" type="string">
-            <column name="nombre" length="50" />
-        </property>
-        <property name="precio" type="java.lang.Double">
-            <column name="precio" precision="22" scale="0" />
-        </property>
-        <property name="imagen" type="string">
-            <column name="imagen" length="50" />
-        </property>
-    </class>
+  <class catalog="udeacommerce" name="co.edu.udea.entity.Producto" optimistic-lock="version" table="productos">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nombre" type="string">
+      <column length="50" name="nombre"/>
+    </property>
+    <property name="precio" type="java.lang.Double">
+      <column name="precio" precision="22" scale="0"/>
+    </property>
+    <property name="imagen" type="string">
+      <column length="50" name="imagen"/>
+    </property>
+  </class>
 </hibernate-mapping>

@@ -10,14 +10,14 @@ package co.edu.udea.entity;
  * @author Yoiner Esteban Gomez Ayala yoiner.gomez22@gmail.com
  */
 public class Item {
-    private Productos p;
+    private Producto p;
     private int cantidad;
 
-    public Productos getP() {
+    public Producto getP() {
         return p;
     }
 
-    public void setP(Productos p) {
+    public void setP(Producto p) {
         this.p = p;
     }
 
