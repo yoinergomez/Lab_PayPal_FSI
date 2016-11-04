@@ -29,12 +29,12 @@ public class ProductoController {
     public ProductoController() {
     }
 
-    public List<Producto> getList() {
+    public List<Producto> getLista() {
         ProductoDAO dao = new ProductoDAO();
         return dao.getAll();
     }
     
-    public void setList(List<Producto> lista) {
+    public void setLista(List<Producto> lista) {
         this.list = lista;
     }
     
